@@ -6,8 +6,6 @@ public class TestaPontoFlutuante {
 		salario = 5300.50;
 		System.out.println("Meu salário será: " + salario);
 		
-		int idade = 37;
-		
 		double divisao = 3.14 / 2;
 		System.out.println(divisao);
 		
