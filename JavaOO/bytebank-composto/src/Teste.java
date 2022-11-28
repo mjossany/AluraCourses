@@ -4,9 +4,9 @@ public class Teste {
 	public static void main(String[] args) {
 
 		Conta contaDoCliente = new Conta();
-		contaDoCliente.titular = new Cliente();
+		contaDoCliente.setTitular(new Cliente());
 
-		contaDoCliente.titular.nome = "Jossany";
+		contaDoCliente.getTitular().setNome("Jossany Moura");
 
 	}
 }
