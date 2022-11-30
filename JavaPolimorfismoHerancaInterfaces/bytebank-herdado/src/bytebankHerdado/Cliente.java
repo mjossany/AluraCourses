@@ -2,20 +2,20 @@ package bytebankHerdado;
 
 public class Cliente implements Autenticavel {
 
-	private int senha;
+	private AutenticacaoUtil autenticador;
+	
+	public Cliente() {
+		this.autenticador = new AutenticacaoUtil();
+	}
 
 	@Override
 	public void setSenha(int Senha) {
-		this.senha = Senha;
+		this.autenticador.setSenha(Senha);
 	}
 
 	@Override
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.autenticador.autentica(senha);
 	}
 
 }
