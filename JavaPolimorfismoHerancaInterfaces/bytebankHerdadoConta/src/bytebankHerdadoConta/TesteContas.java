@@ -2,7 +2,7 @@ package bytebankHerdadoConta;
 
 public class TesteContas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SaldoInsuficienteException {
 
 		ContaCorrente cc = new ContaCorrente(4331, 12345);
 		ContaPoupanca cp = new ContaPoupanca(4331, 67890);
@@ -12,9 +12,14 @@ public class TesteContas {
 
 		System.out.println("Saldo CC: " + cc.getSaldo());
 		System.out.println("Saldo CP: " + cp.getSaldo());
-		
-		cp.transfere(150.0, cc);
-		cc.saca(50.0);
+
+		try {
+			cp.transfere(350.0, cc);
+			cc.saca(50.0);
+		} catch (SaldoInsuficienteException ex) {
+			System.out.println(ex.getMessage());
+			ex.printStackTrace();
+		}
 
 		System.out.println("Saldo CC: " + cc.getSaldo());
 		System.out.println("Saldo CP: " + cp.getSaldo());
