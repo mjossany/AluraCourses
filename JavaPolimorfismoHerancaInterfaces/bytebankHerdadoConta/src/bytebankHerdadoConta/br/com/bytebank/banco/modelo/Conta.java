@@ -1,4 +1,4 @@
-package bytebankHerdadoConta;
+package bytebankHerdadoConta.br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
 
