@@ -8,5 +8,15 @@ package bytebankHerdadoConta.br.com.bytebank.banco.modelo;
  */
 public class Cliente {
 
-	
+	private String nome;
+
+	public void setNome(String string) {
+		this.nome = string;
+
+	}
+
+	public String getNome() {
+		return this.nome;
+	}
+
 }
