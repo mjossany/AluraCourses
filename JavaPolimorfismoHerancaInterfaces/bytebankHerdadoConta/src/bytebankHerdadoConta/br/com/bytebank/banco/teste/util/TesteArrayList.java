@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import bytebankHerdadoConta.br.com.bytebank.banco.modelo.Conta;
 import bytebankHerdadoConta.br.com.bytebank.banco.modelo.ContaCorrente;
 
-public class Teste {
+public class TesteArrayList {
 
 	public static void main(String[] args) {
 
