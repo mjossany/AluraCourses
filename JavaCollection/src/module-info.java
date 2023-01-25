@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author jossanymoura
+ *
+ */
+module gerenciadorDeCursos {
+}
